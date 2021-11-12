@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: $c-text;
+  font-size: $f-size-md;
+  font-weight: $f-weight-normal;
+  font-family: 'Cairo', sans-serif;
+}
