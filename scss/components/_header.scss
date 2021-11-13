@@ -1,0 +1,18 @@
+header{
+    padding: 1.2rem 0;
+    box-shadow: 0 3px 10px rgba(black, 0.08);
+    .logo{
+        max-width: 300px;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        &:last-of-type{
+            padding: 1.2rem 2.4rem;
+            background-color: #5AD24C;
+            color: white;
+            border-radius: 12px;
+        }
+    }
+}

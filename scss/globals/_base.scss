@@ -14,4 +14,8 @@ body {
   font-size: $f-size-md;
   font-weight: $f-weight-normal;
   font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+ul{
+  list-style-type: none;
 }

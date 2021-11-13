@@ -1,5 +1,16 @@
 *[class*="flex"] {
 	display: flex;
+	gap: 0.8rem;
+}
+// gap
+*[class*="__gap-sm"] {
+	gap: 0.8rem;
+}
+*[class*="__gap-md"] {
+	gap: 1.6rem;
+}
+*[class*="__gap-lg"] {
+	gap: 2.4rem;
 }
 // justify-content
 *[class*="__jc-start"] {
