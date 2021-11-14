@@ -15,7 +15,9 @@ sendRequestsBtns.forEach(btn => btn.addEventListener('click', openModal));
 
 function openModal() {
 	modal.classList.add('show');
+	document.body.style.overflow = 'hidden';
 }
 function closeModal() {
 	modal.classList.remove('show');
+	document.body.style.overflow = 'auto';
 }
