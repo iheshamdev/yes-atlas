@@ -1,49 +1,60 @@
-footer{
-    margin-bottom: 6rem;
-    .container{
-        background-color: $c-gray-light;
-        border-radius: 16px;
-        overflow: hidden;
-        padding: 0;
-    }
-    .locations-grid-wrapper{
-        direction: ltr;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        column-gap: 3rem;
-        row-gap: 4rem;
-        padding: 4rem;
-    }
-    .location{
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-        &__header{
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-            p{
-                margin-top: 0.5rem;
-            }
-        }
-        li{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 0.5rem 0;
-        }
-    }
-    .copywrite{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.2rem 4rem;
-        background-color: $c-gray;
-        border-radius: 16px;
-        li{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-    }
+footer {
+	margin-bottom: 6rem;
+	.container {
+		background-color: $c-gray-light;
+		border-radius: 16px;
+		overflow: hidden;
+		padding: 0;
+	}
+	.locations-grid-wrapper {
+		direction: ltr;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		column-gap: 3rem;
+		row-gap: 4rem;
+		padding: 4rem;
+	}
+	.location {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		&__header {
+			display: flex;
+			align-items: center;
+			gap: 1.2rem;
+			p {
+				margin-top: 0.5rem;
+			}
+		}
+		li {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			padding: 0.5rem 0;
+		}
+	}
+	.copywrite {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.2rem 4rem;
+		background-color: $c-gray;
+		border-radius: 16px;
+		li {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			white-space: nowrap;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	footer {
+		.copywrite {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
 }
