@@ -28,3 +28,15 @@ button{
   cursor: pointer;
   background-color: transparent;
 }
+span{
+  display: inline-block;
+}
+
+.section-header{
+  margin-bottom: 4.8rem;
+  text-align: center;
+  p{
+      max-width: 800px;
+      margin: 1.2rem auto 0;
+  }
+}
