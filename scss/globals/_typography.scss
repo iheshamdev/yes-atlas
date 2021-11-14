@@ -11,9 +11,9 @@ $f-weight-bold: 700;
 $f-size-xxs: 1.2rem;
 $f-size-xs: 1.3rem;
 $f-size-sm: 1.4rem;
-$f-size-md: 1.6rem;
-$f-size-lg: 1.8rem;
-$f-size-xl: 2.0rem;
+$f-size-md: 1.5rem;
+$f-size-lg: 1.7rem;
+$f-size-xl: 1.8rem;
 $f-size-xxl: 2rem;
 
 h1,
@@ -21,31 +21,31 @@ h2,
 h3,
 h4,
 h5 {
-	font-weight: var(--f-weight-bold);
+	font-weight: $f-weight-bold;
 }
 h1 {
-	font-size: var(--f-size-xxl);
-	line-height: calc(var(--f-size-xxl) + 0.8rem);
+	font-size: $f-size-xxl;
+	line-height: calc($f-size-xxl + 0.8rem);
 }
 h2 {
-	font-size: var(--f-size-xl);
-	line-height: calc(var(--f-size-xl) + 0.8rem);
+	font-size: $f-size-xl;
+	line-height: calc($f-size-xl + 0.8rem);
 }
 h3 {
-	font-size: var(--f-size-lg);
-	line-height: calc(var(--f-size-lg) + 0.8rem);
+	font-size: $f-size-lg;
+	line-height: calc($f-size-lg + 0.8rem);
 }
 h4 {
-	font-size: var(--f-size-md);
-	line-height: calc(var(--f-size-md) + 0.8rem);
+	font-size: $f-size-md;
+	line-height: calc($f-size-md + 0.8rem);
 }
 h5 {
-	font-size: var(--f-size-sm);
-	line-height: calc(var(--f-size-sm) + 0.8rem);
+	font-size: $f-size-sm;
+	line-height: calc($f-size-sm + 0.8rem);
 }
 h6 {
-	font-size: var(--f-size-xs);
-	line-height: calc(var(--f-size-xs) + 0.8rem);
+	font-size: $f-size-xs;
+	line-height: calc($f-size-xs + 0.8rem);
 }
 
 // Weights
