@@ -1,18 +1,66 @@
-header{
-    padding: 1.2rem 0;
-    box-shadow: 0 3px 10px rgba(black, 0.08);
-    .logo{
-        max-width: 300px;
-    }
-    li{
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-        &:last-of-type{
-            padding: 1.2rem 2.4rem;
-            background-color: #5AD24C;
-            color: white;
-            border-radius: 12px;
-        }
-    }
+header {
+	padding: 1.2rem 0;
+	box-shadow: 0 3px 10px rgba(black, 0.08);
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2.4rem;
+	}
+	.logo {
+		max-width: 300px;
+	}
+	ul {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		gap: 2.4rem;
+	}
+	li {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		white-space: nowrap;
+	}
+	button {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		padding: 1.2rem 2.4rem;
+		background-color: #5ad24c;
+		color: white;
+		border-radius: 12px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		padding-bottom: 0;
+		.container {
+			flex-wrap: wrap;
+		}
+		ul {
+			order: 1;
+			width: 100%;
+			margin-left: -1rem;
+			margin-right: -1rem;
+			background-color: $c-gray;
+			justify-content: center;
+			gap: 4rem;
+		}
+		li {
+			padding: 1.6rem 0;
+		}
+	}
+}
+
+@media screen and (max-width: 410px) {
+	header {
+		.container {
+			justify-content: center;
+		}
+		.logo {
+			max-width: 70%;
+		}
+	}
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap');
 
-:root{
-    font-size: 10px;
+:root {
+	font-size: 10px;
 }
 
 $f-weight-thin: 300;
@@ -49,58 +49,35 @@ h6 {
 }
 
 // Weights
-.fw-thin{
-    font-weight: $f-weight-thin;
+.fw-thin {
+	font-weight: $f-weight-thin;
 }
-.fw-normal{
-    font-weight: $f-weight-normal;
+.fw-normal {
+	font-weight: $f-weight-normal;
 }
-.fw-bold{
-    font-weight: $f-weight-bold;
+.fw-bold {
+	font-weight: $f-weight-bold;
 }
 
 // Sizes
-.fs-xxs{
-    font-size: $f-size-xxs;
+.fs-xxs {
+	font-size: $f-size-xxs;
 }
-.fs-xs{
-    font-size: $f-size-xs;
+.fs-xs {
+	font-size: $f-size-xs;
 }
-.fs-sm{
-    font-size: $f-size-sm;
+.fs-sm {
+	font-size: $f-size-sm;
 }
-.fs-md{
-    font-size: $f-size-md;
+.fs-md {
+	font-size: $f-size-md;
 }
-.fs-lg{
-    font-size: $f-size-lg;
+.fs-lg {
+	font-size: $f-size-lg;
 }
-.fs-xl{
-    font-size: $f-size-xl;
+.fs-xl {
+	font-size: $f-size-xl;
 }
-.fs-xxl{
-    font-size: $f-size-xxl;
+.fs-xxl {
+	font-size: $f-size-xxl;
 }
-
-// @media screen and (min-width: 761px) {
-// 	:root {
-// 		font-size: 14px;
-// 	}
-// }
-
-// @media screen and (min-width: 501px) and (max-width: 760px) {
-// 	:root {
-// 		font-size: 12px;
-// 	}
-// }
-
-// @media screen and (min-width: 411px) and (max-width: 500px) {
-// 	:root {
-// 		font-size: 11px;
-// 	}
-// }
-// @media screen and (max-width: 410px) {
-// 	:root {
-// 		font-size: 10px;
-// 	}
-// }
