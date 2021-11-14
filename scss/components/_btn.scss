@@ -1,12 +1,15 @@
-.btn{
-    cursor: pointer;
-    min-width: 48px;
-    font-size: $f-size-md;
-    &-primary{
-        background-color: $c-primary;
-        color: white;
-        border-radius: 8px;
-        text-align: center;
-        padding: 1.2rem;
-    }
+.btn {
+	cursor: pointer;
+	min-width: 48px;
+	font-size: $f-size-md;
+	&.block {
+		width: 100%;
+	}
+	&-primary {
+		background-color: $c-primary;
+		color: white;
+		border-radius: 8px;
+		text-align: center;
+		padding: 1.2rem;
+	}
 }

@@ -1,0 +1,72 @@
+.modal {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s,
+		opacity 210ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	&.show {
+		visibility: visible;
+		opacity: 1;
+		.modal__backdrop {
+			opacity: 1;
+		}
+		.modal__box {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	&__backdrop {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: rgba(black, 0.4);
+		transition: 210ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	&__box {
+		width: 800px;
+		max-width: 95%;
+		position: relative;
+		transform: translateY(60px);
+		margin: 5rem auto;
+		z-index: 2;
+		border-radius: 12px;
+		box-shadow: 0 3px 7px 2px rgba(black, 0.2);
+		background-color: #fff;
+		overflow: hidden;
+		transition: 120ms ease-in-out;
+		padding: 32px 24px;
+		display: flex;
+		> div {
+			flex: 1;
+			text-align: center;
+			img {
+				margin-top: 5rem;
+			}
+		}
+		form {
+			flex: 2;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 16px;
+			row-gap: 12px;
+			> *.lg {
+				grid-column: span 2;
+			}
+			.btn-primary {
+				margin-top: 1.6rem;
+			}
+		}
+	}
+}
