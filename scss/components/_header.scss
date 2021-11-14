@@ -39,6 +39,9 @@ header {
 		.container {
 			flex-wrap: wrap;
 		}
+		.logo {
+			max-width: 50%;
+		}
 		ul {
 			order: 1;
 			width: 100%;
@@ -58,9 +61,6 @@ header {
 	header {
 		.container {
 			justify-content: center;
-		}
-		.logo {
-			max-width: 70%;
 		}
 	}
 }

@@ -17,13 +17,13 @@ body {
 	font-family: 'Cairo', sans-serif;
 	direction: rtl;
 	background-color: #fff;
-	> * {
+	#services,
+	#addresses,
+	footer {
 		display: none;
 	}
-	> header {
-		display: block;
-	}
 }
+
 ul {
 	list-style-type: none;
 }
