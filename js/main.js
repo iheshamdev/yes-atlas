@@ -2,6 +2,6 @@
 const togglers = document.querySelectorAll(".address__header");
 togglers.forEach(itm => {
     itm.addEventListener('click', (e) => {
-        e.target.closest('.address').toggle('expand');
+        e.target.closest('.address').classList.toggle('expand');
     });
 });
